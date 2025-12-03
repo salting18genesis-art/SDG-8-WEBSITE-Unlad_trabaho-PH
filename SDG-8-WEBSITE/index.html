@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlad-Trabaho PH - Unified Hub</title>
+    <!-- Load Tailwind CSS for modern styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- GLOBAL HEADER: Logo Only, Centered -->
+    <header class="logo-only-header">
+        <div class="logo">
+            Unlad-Trabaho <span>PH</span>
+        </div>
+    </header>
+
+    <main>
+        <!-- The Main Layout Wrapper -->
+        <div class="home-layout">
+            
+            <!-- LEFT SIDEBAR: The Persistent Navigation Menu -->
+            <aside class="sidebar" id="main-sidebar">
+                <h4>MENU</h4>
+                <ul>
+                    <!-- Home link must show the #page-home content -->
+                    <li><a href="#" data-page="page-home" class="nav-link">Home</a></li>
+                    <li><a href="#" data-page="page-partners" class="nav-link">Our Partners</a></li>
+                    <li><a href="#" data-page="page-location" class="nav-link">Nearby Jobs</a></li>
+                    <li><a href="#" data-page="page-learninghub" class="nav-link">Learning Hub</a></li>
+                </ul>
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#" data-page="page-jobseeker" class="nav-link">Job Seeker Profile</a></li>
+                    <li><a href="#" data-page="page-employer" class="nav-link">Employer Profile</a></li>
+                </ul>
+                <h4>Login/Register</h4>
+                <!-- Login link must show the #page-auth content -->
+                <a href="#" data-page="page-auth" class="btn btn-primary block w-full nav-link">Access Account</a>
+            </aside>
+
+            <!-- MAIN CONTENT AREA (All pages will be contained here) -->
+            <div id="content-area" class="flex-1">
+
+                <!-- 1. HOME PAGE CONTENT -->
+                <section id="page-home" class="page-content active">
+                    <!-- MASTERHEAD: Home  -->
+                    <div class="masthead home-masthead">
+                        <h1 class="masthead-title">Work for Every Filipino</h1>
+                        <p class="masthead-subtitle">We're here to help and solve the gap between Filipino Workers and ethical Companies in the Philippines.</p>
+                    </div>
+
+                    <!-- Main Content Section -->
+                    <section class="p-4 md:p-8">
+                        <p class="text-gray-600 mb-6">Choose your path to get started with Unlad-Trabaho PH.</p>
+
+                        <div class="grid-container">
+                            <!-- Job Seeker Card -->
+                            <div class="card">
+                                <h3>I am a Job Seeker</h3>
+                                <p>Create your professional resume, find legitimate jobs and verified Companies.</p>
+                                <a href="#" data-page="page-jobseeker" class="btn btn-primary mt-4 block nav-link">Create your Resume</a>
+                            </div>
+                            <!-- Employer Card -->
+                            <div class="card">
+                                <h3>I am an Employer (Company)</h3>
+                                <p>Get your company verified, post job openings, and connect with skilled Filipino workers ready to contribute.</p>
+                                <a href="#" data-page="page-employer" class="btn btn-secondary mt-4 block nav-link">Post a Job</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                
+                <!-- 2. PARTNERS PAGE CONTENT -->
+                <section id="page-partners" class="page-content">
+                    <!-- MASTERHEAD: Partners Focus -->
+                    <div class="masthead partners-masthead">
+                        <h1 class="masthead-title">Join Our Network of Trusted Partners</h1>
+                        <p class="masthead-subtitle">We are Committed to provide a decent and quality work opportunities for every filipino.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8">
+                        <h2 class="text-2xl font-semibold mb-4 text-center">Our Trusted Companies</h2>
+                        <div class="grid-container">
+                            <!-- Partner 1 -->
+                            <div class="card text-center partner-card">
+                                <img src="https://tse1.mm.bing.net/th/id/OIP.Ln3kqESOAHsTZ0OWObdo4gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SM Malls Logo" class="logo-placeholder"></img>
+                                <h3>SM Malls</h3>
+                                <a class="btn btn-secondary">Apply Now</a>
+                            </div>
+                            <!-- Partner 2 -->
+                            <div class="card text-center partner-card">
+                                <img src="https://seeklogo.com/images/A/ayala-malls-logo-7634457E2A-seeklogo.com.png" alt="Ayala Malls Logo" class="logo-placeholder"></img>
+                                <h3>Ayala Malls</h3>
+                                <a class="btn btn-secondary">Apply Now</a>
+                            </div>
+                            <!-- Partner 3 -->
+                            <div class="card text-center partner-card">
+                               <img src="https://hittbrands.com/wp-content/uploads/2023/09/7Eleven.jpg" alt="7-Eleven Logo" class="logo-placeholder"></img>
+                                <h3>7-Eleven</h3>
+                                <a class="btn btn-secondary">Apply Now</a>
+                            </div>
+                            <!-- Partner 4 -->
+                            <div class="card text-center partner-card">
+                                <img src="https://logodix.com/logo/1587901.jpg" alt="Saver's Logo" class="logo-placeholder"></img>
+                                <h3>Saver's</h3>
+                                <a class="btn btn-sm btn-secondary">Apply Now</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- 3. LOCATION PAGE CONTENT (Nearby Jobs) -->
+                <section id="page-location" class="page-content">
+                    <!-- MASTERHEAD: Location/Jobs Focus -->
+                    <div class="masthead location-masthead">
+                        <h1 class="masthead-title">Find Jobs Nearest You</h1>
+                        <p class="masthead-subtitle">Browse legitimate job openings by location across Region III and beyond.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8">
+                        <h2 class="text-2xl font-semibold mb-6 text-center">Available Branches</h2>
+                        <div class="grid-container location-grid">
+                            <div class="card location-card text-center">
+                                <h4 class="text-xl font-bold mb-3">Olongapo City</h4>
+                                <button class="btn btn-primary">View Jobs</button>
+                            </div>
+                            <div class="card location-card text-center">
+                                <h4 class="text-xl font-bold mb-3">Bataan</h4>
+                                <button class="btn btn-primary">View Jobs</button>
+                            </div>
+                            <div class="card location-card text-center">
+                                <h4 class="text-xl font-bold mb-3">Pampanga</h4>
+                                <button class="btn btn-primary">View Jobs</button>
+                            </div>
+                            <div class="card location-card text-center">
+                                <h4 class="text-xl font-bold mb-3">Zambales</h4>
+                                <button class="btn btn-primary">View Jobs</button>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- 4. LEARNING HUB PAGE CONTENT -->
+                <section id="page-learninghub" class="page-content">
+                    <!-- MASTERHEAD: Learning Hub Focus -->
+                    <div class="masthead learning-masthead">
+                        <h1 class="masthead-title">Level Up Your Skills</h1>
+                        <p class="masthead-subtitle">Free courses, tips, and tools designed specifically for the Filipino workforce to help you ace your next interview.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8">
+                        <h2 class="text-2xl font-semibold mb-6 text-center">Official Government & Partner Courses</h2>
+                        <div class="grid-container">
+                            <!-- TESDA CARD-->
+                            <div class="card course-card">
+                                <h3>TESDA</h3>
+                                <p>Learn about TESDA enrollment, requirements, available courses, and national certification.</p>
+                                <a href="https://www.tesda.gov.ph/" target="_blank" class="btn btn-primary">Start Course</a>
+                            </div>
+                            <!-- DICT CARD-->
+                            <div class="card course-card">
+                                <h3>DICT</h3>
+                                <p>Jumpstart your digital career. apply for DICT's free ICT literacy and specialized training courses.</p>
+                                <a href="https://dict-staging.oueg.info/home" target="_blank" class="btn btn-secondary">Enroll Now</a>
+                            </div>
+                            <!-- DOLE CARD -->
+                            <div class="card course-card">
+                                <h3>DOLE</h3>
+                                <p>Get started with DOLE. Learn how to register for employment assistance, job matching, and training support.</p>
+                                <a href="https://dole.gov.ph/" target="_blank" class="btn btn-primary">Start Now</a>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                
+                <!-- 5. JOB SEEKER PAGE CONTENT - PROFILE FORM -->
+                <section id="page-jobseeker" class="page-content">
+                    <!-- MASTERHEAD: Job Seeker Focus -->
+                    <div class="masthead seeker-masthead">
+                        <h1 class="masthead-title">Build Your Future Profile</h1>
+                        <p class="masthead-subtitle">Help us match you with the best Decent Work opportunities by completing your profile.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8 max-w-4xl mx-auto">
+                        <div class="card p-6">
+                            <h2 class="text-2xl font-bold mb-6 text-center text-primary-dark">Job Seeker Profile Registration</h2>
+                            
+                            <form onsubmit="event.preventDefault(); console.log('Job Seeker Profile Submission'); alert('Profile Saved Successfully!');">
+                                
+                                <!-- Personal Information -->
+                                <div class="mb-8 p-4 border rounded-lg bg-gray-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">1. Personal Information</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="input-group">
+                                            <label for="js-fullname">Full Name</label>
+                                            <input type="text" id="js-fullname" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="js-contact">Contact Number</label>
+                                            <input type="tel" id="js-contact" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="js-email">Email Address</label>
+                                            <input type="email" id="js-email" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="js-location">Current City/Municipality</label>
+                                            <input type="text" id="js-location" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Education -->
+                                <div class="mb-8 p-4 border rounded-lg bg-gray-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">2. Educational Background</h3>
+                                    <div class="input-group">
+                                        <label for="js-degree">Highest Educational Attainment</label>
+                                        <select id="js-degree" required>
+                                            <option value="">Select Level</option>
+                                            <option value="highschool">High School Graduate</option>
+                                            <option value="college">College Graduate (Degree)</option>
+                                            <option value="vocational">Vocational/TESDA Certification</option>
+                                            <option value="masters">Master's Degree</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="js-school">School/Institution</label>
+                                        <input type="text" id="js-school" placeholder="e.g., University of the Philippines" required>
+                                    </div>
+                                </div>
+
+                                <!-- Target Job -->
+                                <div class="mb-8 p-4 border rounded-lg bg-gray-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">3. Target Job & Skills</h3>
+                                    <div class="input-group">
+                                        <label for="js-role">Desired Job Role</label>
+                                        <input type="text" id="js-role" placeholder="e.g., Software Developer, Administrative Assistant" required>
+                                    </div>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="input-group">
+                                            <label for="js-salary">Expected Monthly Salary (PHP)</label>
+                                            <input type="number" id="js-salary" placeholder="e.g., 25000" min="0" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="js-experience">Years of Experience</label>
+                                            <input type="number" id="js-experience" placeholder="e.g., 3" min="0" required>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="js-skills">Key Skills (Separate with commas)</label>
+                                        <textarea id="js-skills" rows="3" placeholder="e.g., HTML, JavaScript, Customer Service, Team Leadership"></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-full text-lg">Save Profile & Find Jobs</button>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- 6. EMPLOYER PAGE CONTENT - VERIFICATION FORM -->
+                <section id="page-employer" class="page-content">
+                    <!-- MASTERHEAD: Employer Focus -->
+                    <div class="masthead employer-masthead">
+                        <h1 class="masthead-title">Verify Your Company & Post Jobs</h1>
+                        <p class="masthead-subtitle">Complete this form to become a verified Unlad-Trabaho PH partner and start hiring.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8 max-w-4xl mx-auto">
+                        <div class="card p-6">
+                            <h2 class="text-2xl font-bold mb-6 text-center text-primary-dark">Company Onboarding & Verification</h2>
+
+                            <form onsubmit="event.preventDefault(); console.log('Employer Form Submission'); alert('Company Verification Request Submitted!');">
+                                
+                                <!-- Company Information -->
+                                <div class="mb-8 p-4 border rounded-lg bg-gray-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">1. Company Details</h3>
+                                    <div class="input-group">
+                                        <label for="emp-company-name">Company Legal Name</label>
+                                        <input type="text" id="emp-company-name" required>
+                                    </div>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="input-group">
+                                            <label for="emp-tin">TIN (Tax Identification Number)</label>
+                                            <input type="text" id="emp-tin" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="emp-reg-type">Registration Type</label>
+                                            <select id="emp-reg-type" required>
+                                                <option value="">Select Type</option>
+                                                <option value="sec">SEC Registered</option>
+                                                <option value="dti">DTI Registered</option>
+                                                <option value="other">Other/Local Permit</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="emp-address">Office Address</label>
+                                        <input type="text" id="emp-address" required>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Person -->
+                                <div class="mb-8 p-4 border rounded-lg bg-gray-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">2. Primary Contact Person</h3>
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div class="input-group">
+                                            <label for="emp-contact-name">Name</label>
+                                            <input type="text" id="emp-contact-name" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="emp-contact-position">Position</label>
+                                            <input type="text" id="emp-contact-position" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="emp-contact-email">Business Email</label>
+                                            <input type="email" id="emp-contact-email" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="emp-contact-phone">Phone Number</label>
+                                            <input type="tel" id="emp-contact-phone" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Decent Work Commitment -->
+                                <div class="mb-6 p-4 border rounded-lg bg-yellow-50">
+                                    <h3 class="text-xl font-semibold mb-3 border-b pb-2">3. Decent Work Commitment</h3>
+                                    <div class="flex items-start">
+                                        <input type="checkbox" id="emp-commitment" required class="mt-1 mr-2">
+                                        <label for="emp-commitment" class="text-sm">I agree to the Unlad-Trabaho PH Decent Work Code of Conduct, ensuring fair wages, safe working conditions, and ethical hiring practices.</label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-full text-lg">Submit for Verification</button>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- 7. LOGIN/REGISTER PAGE CONTENT - TOGGLE SWITCH -->
+                <section id="page-auth" class="page-content">
+                    <!-- MASTERHEAD: Auth Focus -->
+                    <div class="masthead auth-masthead">
+                        <h1 class="masthead-title">Your Gateway to Decent Work</h1>
+                        <p class="masthead-subtitle">Log in or create an account to start your journey with Unlad-Trabaho PH.</p>
+                    </div>
+
+                    <section class="p-4 md:p-8">
+                        <div class="max-w-md mx-auto">
+                            <!-- Segmented Control for Login/Register -->
+                            <div class="segmented-control">
+                                <button id="tab-login" class="active" onclick="toggleAuthForm('login')">Login</button>
+                                <button id="tab-register" onclick="toggleAuthForm('register')">Register</button>
+                            </div>
+
+                            <div class="card p-6">
+                                <!-- Login Form (Initially Active) -->
+                                <div id="login-form">
+                                    <h2 class="text-2xl font-semibold mb-4 text-center">Sign In</h2>
+                                    <form onsubmit="event.preventDefault(); console.log('Login attempt'); alert('Attempting Login...');">
+                                        <div class="input-group">
+                                            <label for="login-email">Email Address</label>
+                                            <input type="email" id="login-email" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="login-password">Password</label>
+                                            <input type="password" id="login-password" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-full">Sign In</button>
+                                        <p class="text-center mt-3 text-sm"><a href="#" class="text-gray-500 hover:text-primary">Forgot Password?</a></p>
+                                    </form>
+                                </div>
+
+                                <!-- Register Form (Initially Hidden) -->
+                                <div id="register-form" style="display: none;">
+                                    <h2 class="text-2xl font-semibold mb-4 text-center">Create Account</h2>
+                                    <form onsubmit="event.preventDefault(); console.log('Registration attempt'); alert('Attempting Registration...');">
+                                        <div class="input-group">
+                                            <label for="register-name">Full Name</label>
+                                            <input type="text" id="register-name" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="register-email">Email Address</label>
+                                            <input type="email" id="register-email" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <label for="register-password">Create Password</label>
+                                            <input type="password" id="register-password" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-secondary w-full">Create Account</button>
+                                        <p class="text-xs mt-3 text-center">By registering, you agree to our <a href="#" data-page="page-terms" class="text-primary nav-link">Terms & Conditions</a>.</p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- 8. TERMS & CONDITION PAGE CONTENT -->
+                <section id="page-terms" class="page-content">
+                    <section class="p-4 md:p-8 max-w-4xl mx-auto">
+                        <div class="masthead bg-gray-700 text-white">
+                            <h1 class="masthead-title">Privacy Policy & Terms of Use</h1>
+                            <p class="masthead-subtitle">Transparency, Security, and Trust are the pillars of our platform.</p>
+                        </div>
+
+                        <hr class="divider">
+
+                        <div class="section-header">
+                            <h2>Privacy Policy</h2>
+                            <p>SDG 8 Decent Work and Economic Growth</p>
+                        </div>
+
+                        <div class="card p-6 mb-8">
+                            <h2 class="text-xl font-bold mb-3">Introduction</h2>
+                            <p>Welcome to Unlad-Trabaho PH. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our website and utilize our job matching services, in compliance with the <strong>Data Privacy Act of 2012 (Republic Act No. 10173)</strong> of the Philippines.</p>
+                            <br>
+
+                            <h3 class="text-lg font-semibold mb-2">1. Information We Collect</h3>
+                            <p>We collect personal information such as name, email address, contact number, resume details, and employment history solely for the purpose of providing job matching services and platform operation.</p>
+                            <br>
+
+                            <h3 class="text-lg font-semibold mb-2">2. Consent for Processing</h3>
+                            <p>By using our services, you explicitly agree that we may process your personal data solely for the purpose of job matching, identity verification, and improving platform services.</p>
+                            <br>
+
+                            <h3 class="text-lg font-semibold mb-2">3. Security Oath</h3>
+                            <p>We solemnly swear to uphold the highest standards of data security. We commit to <strong>never selling your personal information</strong> to third parties. All data transmission uses industry-standard encryption, and access is strictly limited to authorized personnel only.</p>
+                            <br>
+
+                            <h3 class="text-lg font-semibold mb-2">4. User Conduct</h3>
+                            <p>You agree not to use the website for any unlawful purpose or any purpose prohibited under this clause. You agree not to use the website in any way that could damage the website, the services, or the general business of Unlad-Trabaho PH.</p>
+                            <br>
+
+                            <h3 class="text-lg font-semibold mb-2">5. Account Responsibility</h3>
+                            <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
+                        </div>
+                    </section>
+                </section>
+
+            </div> <!-- End of content-area -->
+        </div> <!-- End of home-layout -->
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Unlad-Trabaho PH. Created by Genesis,Xyrus and Louis.</p>
+            <div class="footer-links">
+                <a href="#" data-page="page-home" class="nav-link">Home</a>
+                <a href="#" data-page="page-terms" class="nav-link">Privacy & Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to handle the page switching (the "hidden" feature)
+
+        /**
+         * Hides all page content sections and shows only the requested one.
+         * @param {string} pageId - The ID of the section to show (e.g., 'page-home').
+         */
+        function showPage(pageId) {
+            // 1. Get all page sections
+            const pages = document.querySelectorAll('.page-content');
+
+            // 2. Hide all pages
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // 3. Show the requested page
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+                // Scroll to the top of the main content area for a better SPA feel
+                document.getElementById('content-area').scrollTop = 0;
+
+                // SPECIAL HANDLER: If navigating to the Auth page, ensure Login is active by default
+                if (pageId === 'page-auth') {
+                    toggleAuthForm('login');
+                }
+
+            } else {
+                console.error('Page ID not found:', pageId);
+            }
+        }
+
+        /**
+         * Toggles between the Login and Register forms on the #page-auth section.
+         * @param {string} formType - 'login' or 'register'.
+         */
+        function toggleAuthForm(formType) {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const tabLogin = document.getElementById('tab-login');
+            const tabRegister = document.getElementById('tab-register');
+
+            if (formType === 'login') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                tabLogin.classList.add('active');
+                tabRegister.classList.remove('active');
+            } else if (formType === 'register') {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+                tabLogin.classList.remove('active');
+                tabRegister.classList.add('active');
+            }
+        }
+
+
+        /**
+         * Event listener for all navigation links with the 'nav-link' class.
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Prevent the default link behavior (which would normally reload the page)
+                    e.preventDefault();
+
+                    // Get the target page ID from the data-page attribute
+                    const targetPageId = this.getAttribute('data-page');
+
+                    if (targetPageId) {
+                        showPage(targetPageId);
+                    }
+                });
+            });
+
+            // Ensure the initial page is set to 'page-home' on load
+            showPage('page-home');
+        });
+    </script>
+</body>
+</html>
